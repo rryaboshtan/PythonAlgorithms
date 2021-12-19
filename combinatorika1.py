@@ -5,9 +5,18 @@
 
 import itertools
 
-a = list(itertools.product('ABCX', repeat=5))
+# a = list(itertools.product('ABCDX', repeat=4))
+# count = 0
+# for x in a:
+#     if x[0] == 'X' and x.count('X') == 1 or 'X' not in x:
+#         count += 1
+#         print(x)
+# print(count)
+
+a = list(itertools.product('ТИМОФЕЙ', repeat=5))
 count = 0
 for x in a:
-    if x.count('X') == 1:
+    if x[0] == x.count('Т') >= 1 and x.count('Й') <= 1:
         count += 1
+
 print(count)
